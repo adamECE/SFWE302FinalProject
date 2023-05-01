@@ -1,0 +1,94 @@
+
+package TerminalUI;
+import java.util.Scanner;
+
+import CustomerManagement.Customer;
+import inventoryManagement.Item;
+import inventoryManagement.ItemList;
+import UserManagement.User;
+
+import java.io.IOException;
+import java.util.ArrayList;
+public class UserSession {
+	public static void main(String[] args) throws IOException{
+		User user = new User();
+		ArrayList<User> UserList = User.LoadInventory();
+		ItemList Inventory = new ItemList();
+		Customer customer = new Customer();
+		Integer view;
+		Float currentPrice = (float) 0;
+		customer.name = "Daniel";
+		String userInput;
+		InitializeSystem(Inventory);
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Welcome to main menu!");
+		System.out.println("\nChoose Type: \nManager\nCashier\nCustomer");
+		
+		view = User.login(UserList, scan);
+		
+		if(view == 1) {
+			ManagerSession ms = new ManagerSession();
+			ms.managerActive(scan, Inventory);
+			scan.close();
+			}
+		else if (view == 2) {
+			while(true) {
+				System.out.println();
+				System.out.println("Functions:\nScanItem\nExit");
+				userInput = scan.nextLine();
+				if(userInput.startsWith("ScanItem")){
+					System.out.println("Give Item ID");
+					Integer ID = Integer.valueOf(scan.nextLine());
+					currentPrice = Inventory.ScanItem(ID, currentPrice);
+				}
+				else if(userInput.startsWith("Exit")) {
+					break;
+				}
+				else {
+					System.out.println("Invalid Input");
+				}
+			}
+		}
+		else {
+			while(true) {
+				System.out.println();
+				System.out.println("Functions:\nScanItem\nNotifications\nExit");
+				userInput = scan.nextLine();
+				if(userInput.startsWith("ScanItem")){
+					System.out.println("Give Item ID");
+					Integer ID = Integer.valueOf(scan.nextLine());
+					currentPrice = Inventory.ScanItem(ID, currentPrice);
+				}
+				else if(userInput.startsWith("Notifications")) {
+					System.out.println("Notifications:\n");
+					for(int i = 0; i < customer.notifications.size(); i++) {
+						System.out.println(customer.notifications.get(i));
+					}
+				}
+				else if(userInput.startsWith("Exit")) {
+					break;
+				}
+				else {
+					System.out.println("Invalid Input");
+				}
+			}
+		}
+		}
+	public static void InitializeSystem(ItemList Inventory) {
+		Inventory.Date = (float) 5.1;
+		Item first = new Item();
+		first.expirationDate = 0;
+		first.ID = 0;
+		first.name = "empty";
+		first.price = 0;
+		first.quantity = 0;
+		Inventory.itemList.put(0, first);
+		ArrayList<Item> list = new ArrayList<Item>();
+		list.add(first);
+		Inventory.quantityList.put(first.name, list);
+		Inventory.nameList = new ArrayList<String>();
+		Inventory.nameList.add(first.name);
+		Inventory.LoadInventory(Inventory);
+		
+	}
+}

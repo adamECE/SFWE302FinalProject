@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_nmoywKmTEe2js9zT2mstZw" name="PharmacySystem">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_nphHoKmTEe2js9zT2mstZw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_zcGk4KmTEe2js9zT2mstZw" name="Customer Management System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_ElF0MKmWEe2js9zT2mstZw" client="_zcGk4KmTEe2js9zT2mstZw" supplier="_YTWkAKmVEe2js9zT2mstZw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_bXFkgKnGEe2js9zT2mstZw" client="_zcGk4KmTEe2js9zT2mstZw" supplier="_LtBLEKmUEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_DjKvEKmUEe2js9zT2mstZw" name="User Management System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_GBlnYKmWEe2js9zT2mstZw" client="_DjKvEKmUEe2js9zT2mstZw" supplier="_YTWkAKmVEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_IsOTkKmUEe2js9zT2mstZw" name="Notification System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_ylyN0KnIEe2js9zT2mstZw" client="_IsOTkKmUEe2js9zT2mstZw" supplier="_LWRMQKnGEe2js9zT2mstZw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_16GeQKnIEe2js9zT2mstZw" client="_IsOTkKmUEe2js9zT2mstZw" supplier="_LtBLEKmUEe2js9zT2mstZw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_28mdEKnIEe2js9zT2mstZw" client="_IsOTkKmUEe2js9zT2mstZw" supplier="_DjKvEKmUEe2js9zT2mstZw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_33O5UKnIEe2js9zT2mstZw" client="_IsOTkKmUEe2js9zT2mstZw" supplier="_zcGk4KmTEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_LtBLEKmUEe2js9zT2mstZw" name="Inventory Management">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_HFab4KmWEe2js9zT2mstZw" client="_LtBLEKmUEe2js9zT2mstZw" supplier="_YTWkAKmVEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_OBkAkKmUEe2js9zT2mstZw" name="Authentication System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_Knn-YKmWEe2js9zT2mstZw" client="_OBkAkKmUEe2js9zT2mstZw" supplier="_DjKvEKmUEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_PyVaoKmUEe2js9zT2mstZw" name="Checkout/Checkin System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_kZBfEKnGEe2js9zT2mstZw" client="_PyVaoKmUEe2js9zT2mstZw" supplier="_LtBLEKmUEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_v4bNUKmUEe2js9zT2mstZw" name="Transaction Logging System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_n9NXgKnGEe2js9zT2mstZw" client="_v4bNUKmUEe2js9zT2mstZw" supplier="_PyVaoKmUEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_xxdLgKmUEe2js9zT2mstZw" name="Statistics System">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_yHjEkKnGEe2js9zT2mstZw" client="_xxdLgKmUEe2js9zT2mstZw" supplier="_LtBLEKmUEe2js9zT2mstZw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_y9o_EKnGEe2js9zT2mstZw" client="_xxdLgKmUEe2js9zT2mstZw" supplier="_v4bNUKmUEe2js9zT2mstZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_YTWkAKmVEe2js9zT2mstZw" name="Database"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_QKIksKmWEe2js9zT2mstZw" name="ManagementSystem"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_LWRMQKnGEe2js9zT2mstZw" name="TerminalGUI"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_PKMJ0KnGEe2js9zT2mstZw" client="_LWRMQKnGEe2js9zT2mstZw" supplier="_OBkAkKmUEe2js9zT2mstZw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_3hRiUKnGEe2js9zT2mstZw" client="_LWRMQKnGEe2js9zT2mstZw" supplier="_PyVaoKmUEe2js9zT2mstZw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_EN2BgN__Ee2YyIqZqsOCoA" name="]"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_T_PdsN__Ee2YyIqZqsOCoA" name="InventoryManagement">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_B_mHoOAHEe2YyIqZqsOCoA" name="InventoryManager">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Ge57MOBtEe2YyIqZqsOCoA" name="getName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JPInIOBtEe2YyIqZqsOCoA" name="setName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KXA1MOBtEe2YyIqZqsOCoA" name="getPrice"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Pqoq8OBtEe2YyIqZqsOCoA" name="setPrice"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_T02ooOBtEe2YyIqZqsOCoA" name="addToInventory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_V-PXAOBtEe2YyIqZqsOCoA" name="RemoveFromInventory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZSjAYOBtEe2YyIqZqsOCoA" name="getExpDate"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_b3TcIOBtEe2YyIqZqsOCoA" name="setExpDate"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_kseGAOBtEe2YyIqZqsOCoA" name="CheckItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_mhxawOBtEe2YyIqZqsOCoA" name="CheckInventoryStatus"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_oypRMOBtEe2YyIqZqsOCoA" name="getQuantity"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rNT80OBtEe2YyIqZqsOCoA" name="setQuantity"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_sUQ90OBtEe2YyIqZqsOCoA" name="getID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_s9m1wOBtEe2YyIqZqsOCoA" name="setID"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_87MFcOC9Ee2YyIqZqsOCoA" name="getTime"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_ZlAMUN__Ee2YyIqZqsOCoA" name="CustomerManagement">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_zEjPMOAHEe2YyIqZqsOCoA" name="CustomerManager" visibility="package">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WzOW4OBwEe2YyIqZqsOCoA" name="getName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cLgqMOBwEe2YyIqZqsOCoA" name="getDOB"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dPLtsOBwEe2YyIqZqsOCoA" name="setName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_d8T5cOBwEe2YyIqZqsOCoA" name="setDOB"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_etNK4OBwEe2YyIqZqsOCoA" name="getAddress"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gIUeAOBwEe2YyIqZqsOCoA" name="setAddress"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_g7DigOBwEe2YyIqZqsOCoA" name="getPhone"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_h4roYOBwEe2YyIqZqsOCoA" name="setPhone"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ijh8MOBwEe2YyIqZqsOCoA" name="getInsurance"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jmP9cOBwEe2YyIqZqsOCoA" name="setInsurance"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_klE9MOBwEe2YyIqZqsOCoA" name="getCustomerHistory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_l69LAOBwEe2YyIqZqsOCoA" name="addInvoice"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nVRz8OBwEe2YyIqZqsOCoA" name="createAccount"/>
+    </nestedClassifier>
+    <packagedElement xmi:type="uml:Component" xmi:id="_nlGecOAJEe2YyIqZqsOCoA" name="Customer">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_TUES8OBxEe2YyIqZqsOCoA" client="_nlGecOAJEe2YyIqZqsOCoA" supplier="_O2T6YOASEe2YyIqZqsOCoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_LmjNoOBxEe2YyIqZqsOCoA" client="_ZlAMUN__Ee2YyIqZqsOCoA" supplier="_3pPfMOADEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_MLgwwOABEe2YyIqZqsOCoA" name="AuthenticationSystem"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_9uc00OABEe2YyIqZqsOCoA" name="UserManagement">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_rIXw4OAJEe2YyIqZqsOCoA" name="UserManager">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_uF3zcOBvEe2YyIqZqsOCoA" name="createAccount"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vL940OBvEe2YyIqZqsOCoA" name="getPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_wV_b8OBvEe2YyIqZqsOCoA" name="setPassword"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xLx0cOBvEe2YyIqZqsOCoA" name="getUserName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yEch0OBvEe2YyIqZqsOCoA" name="setUserName"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_y9fCoOBvEe2YyIqZqsOCoA" name="getNotificationList"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3PNWgOBvEe2YyIqZqsOCoA" name="clearNotificationList"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7WtXYOBvEe2YyIqZqsOCoA" name="getAccountType"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-ukEAOBvEe2YyIqZqsOCoA" name="setAccountType"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__75Z0OBvEe2YyIqZqsOCoA" name="login"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_C51xoOBwEe2YyIqZqsOCoA" name="logout"/>
+    </nestedClassifier>
+    <packagedElement xmi:type="uml:Component" xmi:id="_USc9gOATEe2YyIqZqsOCoA" name="User">
+      <packagedElement xmi:type="uml:Component" xmi:id="_V4ZAkOATEe2YyIqZqsOCoA" name="Pharmacist"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_aalZYOATEe2YyIqZqsOCoA" name="Cashier"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_dEcXkOATEe2YyIqZqsOCoA" name="Manager">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_zgqlAOBrEe2YyIqZqsOCoA" client="_dEcXkOATEe2YyIqZqsOCoA" supplier="_8GtosOAGEe2YyIqZqsOCoA" contract="_8GtosOAGEe2YyIqZqsOCoA"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_7wTf8OBrEe2YyIqZqsOCoA" client="_dEcXkOATEe2YyIqZqsOCoA" supplier="_B7bfsOAPEe2YyIqZqsOCoA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_c4rZMOAjEe2YyIqZqsOCoA" client="_9uc00OABEe2YyIqZqsOCoA" supplier="_lUVkcOADEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_lUVkcOADEe2YyIqZqsOCoA" name="NotificationManagement">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_8GtosOAGEe2YyIqZqsOCoA" name="NotificationManager" visibility="protected">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_YSXgUOBuEe2YyIqZqsOCoA" name="sendStatusNotification"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xR-YgOBuEe2YyIqZqsOCoA" name="checkForExp"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JTLuwOBvEe2YyIqZqsOCoA" name="printMessage"/>
+    </nestedClassifier>
+    <packagedElement xmi:type="uml:Component" xmi:id="_B7bfsOAPEe2YyIqZqsOCoA" name="Notification"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_wvokQOAdEe2YyIqZqsOCoA" client="_lUVkcOADEe2YyIqZqsOCoA" supplier="_T_PdsN__Ee2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_3pPfMOADEe2YyIqZqsOCoA" name="CheckoutSystem">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_Sz80oOASEe2YyIqZqsOCoA" name="CheckoutManager" visibility="package">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hHxssOBsEe2YyIqZqsOCoA" name="PrintInvoice"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_nBi8cOBsEe2YyIqZqsOCoA" name="CheckDate"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ZL5zkOByEe2YyIqZqsOCoA" name="PrintWarning"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_6LiDEOfVEe2scMLhP6JHoQ" name="Pay"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_7sHFAOfVEe2scMLhP6JHoQ" name="ScanItem"/>
+    </nestedClassifier>
+    <packagedElement xmi:type="uml:Component" xmi:id="_wsw_0OAEEe2YyIqZqsOCoA" name="Cart">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_PkNIQOBsEe2YyIqZqsOCoA" client="_wsw_0OAEEe2YyIqZqsOCoA" supplier="_uHgKwOAlEe2YyIqZqsOCoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_O2T6YOASEe2YyIqZqsOCoA" name="Invoice">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_TUFTUOBsEe2YyIqZqsOCoA" client="_O2T6YOASEe2YyIqZqsOCoA" supplier="_wsw_0OAEEe2YyIqZqsOCoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_hp3a0OAkEe2YyIqZqsOCoA" client="_3pPfMOADEe2YyIqZqsOCoA" supplier="_ZlAMUN__Ee2YyIqZqsOCoA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_lyBjAOAkEe2YyIqZqsOCoA" client="_3pPfMOADEe2YyIqZqsOCoA" supplier="_T_PdsN__Ee2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_mkDpcOAPEe2YyIqZqsOCoA" name="TerminalUI">
+    <nestedClassifier xmi:type="uml:Interface" xmi:id="_0ozrsOAREe2YyIqZqsOCoA" name="TerminalInterface" visibility="package">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cuIZoOBxEe2YyIqZqsOCoA" name="generateReport"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_dz8LIOBxEe2YyIqZqsOCoA" name="ViewCustomerHistory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_jqZoMOBxEe2YyIqZqsOCoA" name="PrintInvoice"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_lN73gOBxEe2YyIqZqsOCoA" name="ScanItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qNED8OBxEe2YyIqZqsOCoA" name="CheckInventoryStatus"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rchgsOBxEe2YyIqZqsOCoA" name="CheckItem"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_tlTyIOBxEe2YyIqZqsOCoA" name="Login"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_u4kJwOBxEe2YyIqZqsOCoA" name="Logout"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_vjpuIOBxEe2YyIqZqsOCoA" name="CreateUserAccount"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_x8GMMOBxEe2YyIqZqsOCoA" name="CreateCustomerAccount"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_zRDM8OBxEe2YyIqZqsOCoA" name="AddToInventory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1QptMOBxEe2YyIqZqsOCoA" name="RemoveFromInventory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3VrgAOBxEe2YyIqZqsOCoA" name="GetTransactionHistory"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_E1BaAOByEe2YyIqZqsOCoA" name="openNotifications"/>
+    </nestedClassifier>
+    <packagedElement xmi:type="uml:Component" xmi:id="_58pj4OAREe2YyIqZqsOCoA" name="UserSession">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Kkr9cOBwEe2YyIqZqsOCoA" client="_58pj4OAREe2YyIqZqsOCoA" supplier="_rIXw4OAJEe2YyIqZqsOCoA" contract="_rIXw4OAJEe2YyIqZqsOCoA"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_NqtNcOATEe2YyIqZqsOCoA" client="_58pj4OAREe2YyIqZqsOCoA" supplier="_0ozrsOAREe2YyIqZqsOCoA"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_3jPxoOATEe2YyIqZqsOCoA" name="PharmacistSession">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_okWAAOAsEe2YyIqZqsOCoA" client="_3jPxoOATEe2YyIqZqsOCoA" supplier="_B_mHoOAHEe2YyIqZqsOCoA" contract="_B_mHoOAHEe2YyIqZqsOCoA"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xm2iUOAsEe2YyIqZqsOCoA" client="_3jPxoOATEe2YyIqZqsOCoA" supplier="_zEjPMOAHEe2YyIqZqsOCoA" contract="_zEjPMOAHEe2YyIqZqsOCoA"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_wfv8QOBsEe2YyIqZqsOCoA" client="_3jPxoOATEe2YyIqZqsOCoA" supplier="_Sz80oOASEe2YyIqZqsOCoA" contract="_Sz80oOASEe2YyIqZqsOCoA"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_c4SGEOBvEe2YyIqZqsOCoA" client="_3jPxoOATEe2YyIqZqsOCoA" supplier="_8GtosOAGEe2YyIqZqsOCoA" contract="_8GtosOAGEe2YyIqZqsOCoA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_592y4OATEe2YyIqZqsOCoA" name="ManagerSession">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_UC-NsOAsEe2YyIqZqsOCoA" client="_592y4OATEe2YyIqZqsOCoA" supplier="_rIXw4OAJEe2YyIqZqsOCoA" contract="_rIXw4OAJEe2YyIqZqsOCoA"/>
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_bWnacOAsEe2YyIqZqsOCoA" client="_592y4OATEe2YyIqZqsOCoA" supplier="_B_mHoOAHEe2YyIqZqsOCoA" contract="_B_mHoOAHEe2YyIqZqsOCoA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_8PkW0OATEe2YyIqZqsOCoA" name="CashierSession">
+        <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_ikmS0OAmEe2YyIqZqsOCoA" client="_8PkW0OATEe2YyIqZqsOCoA" supplier="_Sz80oOASEe2YyIqZqsOCoA" contract="_Sz80oOASEe2YyIqZqsOCoA"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_t43jwOAjEe2YyIqZqsOCoA" client="_mkDpcOAPEe2YyIqZqsOCoA" supplier="_9uc00OABEe2YyIqZqsOCoA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_xYUGIOAjEe2YyIqZqsOCoA" client="_mkDpcOAPEe2YyIqZqsOCoA" supplier="_T_PdsN__Ee2YyIqZqsOCoA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_0uL1wOAjEe2YyIqZqsOCoA" client="_mkDpcOAPEe2YyIqZqsOCoA" supplier="_ZlAMUN__Ee2YyIqZqsOCoA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_3-csoOAjEe2YyIqZqsOCoA" client="_mkDpcOAPEe2YyIqZqsOCoA" supplier="_3pPfMOADEe2YyIqZqsOCoA"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_aWF2IOBvEe2YyIqZqsOCoA" client="_mkDpcOAPEe2YyIqZqsOCoA" supplier="_lUVkcOADEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_LC3G0OAmEe2YyIqZqsOCoA" client="_8GtosOAGEe2YyIqZqsOCoA" supplier="_uHgKwOAlEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_SKZxQOAmEe2YyIqZqsOCoA" client="_8GtosOAGEe2YyIqZqsOCoA" supplier="_piPP0OAlEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="__rNcoOAmEe2YyIqZqsOCoA" client="_B_mHoOAHEe2YyIqZqsOCoA" supplier="_piPP0OAlEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Af3MsOAnEe2YyIqZqsOCoA" client="_B_mHoOAHEe2YyIqZqsOCoA" supplier="_uHgKwOAlEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_EE0hMOAnEe2YyIqZqsOCoA" client="_Sz80oOASEe2YyIqZqsOCoA" supplier="_O2T6YOASEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_EpD2sOAnEe2YyIqZqsOCoA" client="_Sz80oOASEe2YyIqZqsOCoA" supplier="_wsw_0OAEEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Xg9JwOAnEe2YyIqZqsOCoA" client="_8GtosOAGEe2YyIqZqsOCoA" supplier="_B7bfsOAPEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Zb820OAnEe2YyIqZqsOCoA" client="_rIXw4OAJEe2YyIqZqsOCoA" supplier="_V4ZAkOATEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Z54wAOAnEe2YyIqZqsOCoA" client="_rIXw4OAJEe2YyIqZqsOCoA" supplier="_aalZYOATEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_a19WsOAnEe2YyIqZqsOCoA" client="_rIXw4OAJEe2YyIqZqsOCoA" supplier="_dEcXkOATEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_cHoZ8OAnEe2YyIqZqsOCoA" client="_zEjPMOAHEe2YyIqZqsOCoA" supplier="_nlGecOAJEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_DQqIcOBrEe2YyIqZqsOCoA" client="_Sz80oOASEe2YyIqZqsOCoA" supplier="_uHgKwOAlEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_I-ZuYOBrEe2YyIqZqsOCoA" client="_Sz80oOASEe2YyIqZqsOCoA" supplier="_nlGecOAJEe2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jpZR4OCNEe2YyIqZqsOCoA" name="Pharmacy"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kpp1AOCNEe2YyIqZqsOCoA" name="User"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_noUlkOCNEe2YyIqZqsOCoA" name="Pharmacist">
+    <generalization xmi:type="uml:Generalization" xmi:id="_VgO3cOCQEe2YyIqZqsOCoA" general="_kpp1AOCNEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pGWCwOCNEe2YyIqZqsOCoA" name="Cashier">
+    <generalization xmi:type="uml:Generalization" xmi:id="_UwrCwOCQEe2YyIqZqsOCoA" general="_kpp1AOCNEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qtiqEOCNEe2YyIqZqsOCoA" name="Manager">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Tys-oOCQEe2YyIqZqsOCoA" general="_kpp1AOCNEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_drXwEuCUEe2YyIqZqsOCoA" name="notification" type="_VgA4MOCUEe2YyIqZqsOCoA" association="_drV64OCUEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_drcokOCUEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_drdPoOCUEe2YyIqZqsOCoA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_y0x28OCNEe2YyIqZqsOCoA" name="UserSession">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Saq34OCUEe2YyIqZqsOCoA" name="transaction" type="_X5dOEOCPEe2YyIqZqsOCoA" association="_San0kOCUEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Saw-gOCUEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Sa3sMOCUEe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kQ888uCUEe2YyIqZqsOCoA" name="inventory" type="_Hg9yIOCOEe2YyIqZqsOCoA" association="_kQ55oOCUEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kQ9kAOCUEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kQ9kAeCUEe2YyIqZqsOCoA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_JTTOQeCVEe2YyIqZqsOCoA" name="customer" type="_NJkZYOCOEe2YyIqZqsOCoA" association="_JTQyAOCVEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTT1UOCVEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTUcYOCVEe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_d7wgAOCVEe2YyIqZqsOCoA" name="user" type="_kpp1AOCNEe2YyIqZqsOCoA" association="_d7qZYOCVEe2YyIqZqsOCoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d7yVMeCVEe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oxLxcuCVEe2YyIqZqsOCoA" name="pharmacy" type="_jpZR4OCNEe2YyIqZqsOCoA" association="_oxJ8QOCVEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_04648OCNEe2YyIqZqsOCoA" name="PharmacistSession">
+    <generalization xmi:type="uml:Generalization" xmi:id="_qt8yYOCQEe2YyIqZqsOCoA" general="_y0x28OCNEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WUX_QOCSEe2YyIqZqsOCoA" type="_8yHp0OCNEe2YyIqZqsOCoA" association="_WUWKEOCSEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2MI0UOCNEe2YyIqZqsOCoA" name="CashierSession">
+    <generalization xmi:type="uml:Generalization" xmi:id="_on1acOCQEe2YyIqZqsOCoA" general="_y0x28OCNEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_TcRJsuCSEe2YyIqZqsOCoA" name="cart" type="_8yHp0OCNEe2YyIqZqsOCoA" association="_TcP7kOCSEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TcSX0OCSEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TcSX0eCSEe2YyIqZqsOCoA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6PEeQOCNEe2YyIqZqsOCoA" name="ManagerSession">
+    <generalization xmi:type="uml:Generalization" xmi:id="_pmKq8OCQEe2YyIqZqsOCoA" general="_y0x28OCNEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8PtcIuCUEe2YyIqZqsOCoA" name="report" type="_OU_DoOCOEe2YyIqZqsOCoA" association="_8Pn8kOCUEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8PuqQOCUEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8PuqQeCUEe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8yHp0OCNEe2YyIqZqsOCoA" name="Cart">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IzfNIuCSEe2YyIqZqsOCoA" name="invoice" type="_JnNs8OCOEe2YyIqZqsOCoA" association="_IzdX8OCSEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YT8i8eCVEe2YyIqZqsOCoA" name="item" type="_JEhPkOCOEe2YyIqZqsOCoA" association="_YT6GsOCVEe2YyIqZqsOCoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YT9xEeCVEe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Hg9yIOCOEe2YyIqZqsOCoA" name="Inventory">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_dfy5kOCREe2YyIqZqsOCoA" name="itemlist" type="_IX9rkOCOEe2YyIqZqsOCoA" association="_dfYp4OCREe2YyIqZqsOCoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_df5AMOCREe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_IX9rkOCOEe2YyIqZqsOCoA" name="ItemList">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1zMEOCREe2YyIqZqsOCoA" name="item" type="_JEhPkOCOEe2YyIqZqsOCoA" aggregation="composite" association="_g1wIwOCREe2YyIqZqsOCoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g14roOCREe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JEhPkOCOEe2YyIqZqsOCoA" name="Item"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_JnNs8OCOEe2YyIqZqsOCoA" name="Invoice"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NJkZYOCOEe2YyIqZqsOCoA" name="Customer">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_u897EuCREe2YyIqZqsOCoA" name="invoice" type="_JnNs8OCOEe2YyIqZqsOCoA" aggregation="composite" association="_u88F4OCREe2YyIqZqsOCoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u8_JMeCREe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OU_DoOCOEe2YyIqZqsOCoA" name="Report"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_X5dOEOCPEe2YyIqZqsOCoA" name="Transaction"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dfYp4OCREe2YyIqZqsOCoA" memberEnd="_dfy5kOCREe2YyIqZqsOCoA _df61YOCREe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dfsy8OCREe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dftaAOCREe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_df61YOCREe2YyIqZqsOCoA" name="inventory" type="_Hg9yIOCOEe2YyIqZqsOCoA" association="_dfYp4OCREe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_g1wIwOCREe2YyIqZqsOCoA" memberEnd="_g1zMEOCREe2YyIqZqsOCoA _g15SsOCREe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g1ylAOCREe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g1ylAeCREe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_g15SsOCREe2YyIqZqsOCoA" name="itemlist" type="_IX9rkOCOEe2YyIqZqsOCoA" association="_g1wIwOCREe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_u88F4OCREe2YyIqZqsOCoA" memberEnd="_u897EuCREe2YyIqZqsOCoA _u8_JMuCREe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u897EOCREe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u897EeCREe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_u8_JMuCREe2YyIqZqsOCoA" name="customer" type="_NJkZYOCOEe2YyIqZqsOCoA" association="_u88F4OCREe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IzdX8OCSEe2YyIqZqsOCoA" memberEnd="_IzfNIuCSEe2YyIqZqsOCoA _IzgbQuCSEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IzfNIOCSEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IzfNIeCSEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IzgbQuCSEe2YyIqZqsOCoA" name="cart" type="_8yHp0OCNEe2YyIqZqsOCoA" association="_IzdX8OCSEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TcP7kOCSEe2YyIqZqsOCoA" memberEnd="_TcRJsuCSEe2YyIqZqsOCoA _TcWCMOCSEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TcRJsOCSEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TcRJseCSEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_TcWCMOCSEe2YyIqZqsOCoA" name="cashiersession" type="_2MI0UOCNEe2YyIqZqsOCoA" association="_TcP7kOCSEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_WUWKEOCSEe2YyIqZqsOCoA" memberEnd="_WUX_QOCSEe2YyIqZqsOCoA _WUX_Q-CSEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WUXYMOCSEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WUXYMeCSEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_WUX_Q-CSEe2YyIqZqsOCoA" name="pharmacistsession" type="_04648OCNEe2YyIqZqsOCoA" association="_WUWKEOCSEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_San0kOCUEe2YyIqZqsOCoA" memberEnd="_Saq34OCUEe2YyIqZqsOCoA _Sa9LwOCUEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SaqQ0OCUEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SaqQ0eCUEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Sa9LwOCUEe2YyIqZqsOCoA" name="usersession" type="_y0x28OCNEe2YyIqZqsOCoA" association="_San0kOCUEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VgA4MOCUEe2YyIqZqsOCoA" name="Notification"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_drV64OCUEe2YyIqZqsOCoA" memberEnd="_drXwEuCUEe2YyIqZqsOCoA _drdPoeCUEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_drXwEOCUEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_drXwEeCUEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_drdPoeCUEe2YyIqZqsOCoA" name="manager" type="_qtiqEOCNEe2YyIqZqsOCoA" association="_drV64OCUEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kQ55oOCUEe2YyIqZqsOCoA" memberEnd="_kQ888uCUEe2YyIqZqsOCoA _kQ-yIOCUEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQ888OCUEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kQ888eCUEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_kQ-yIOCUEe2YyIqZqsOCoA" name="usersession" type="_y0x28OCNEe2YyIqZqsOCoA" association="_kQ55oOCUEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8Pn8kOCUEe2YyIqZqsOCoA" memberEnd="_8PtcIuCUEe2YyIqZqsOCoA _8PuqQuCUEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8PtcIOCUEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8PtcIeCUEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8PuqQuCUEe2YyIqZqsOCoA" name="managersession" type="_6PEeQOCNEe2YyIqZqsOCoA" association="_8Pn8kOCUEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JTQyAOCVEe2YyIqZqsOCoA" memberEnd="_JTTOQeCVEe2YyIqZqsOCoA _JTUcYeCVEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JTSnMOCVEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JTTOQOCVEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JTUcYeCVEe2YyIqZqsOCoA" name="usersession" type="_y0x28OCNEe2YyIqZqsOCoA" association="_JTQyAOCVEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YT6GsOCVEe2YyIqZqsOCoA" memberEnd="_YT8i8eCVEe2YyIqZqsOCoA _YT9xEuCVEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YT774OCVEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YT8i8OCVEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YT9xEuCVEe2YyIqZqsOCoA" name="cart" type="_8yHp0OCNEe2YyIqZqsOCoA" association="_YT6GsOCVEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_d7qZYOCVEe2YyIqZqsOCoA" memberEnd="_d7wgAOCVEe2YyIqZqsOCoA _d7yVMuCVEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d7rngOCVEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_d7rngeCVEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_d7yVMuCVEe2YyIqZqsOCoA" name="usersession" type="_y0x28OCNEe2YyIqZqsOCoA" association="_d7qZYOCVEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oxJ8QOCVEe2YyIqZqsOCoA" memberEnd="_oxLxcuCVEe2YyIqZqsOCoA _oxM_kuCVEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oxLxcOCVEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oxLxceCVEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_oxM_kuCVEe2YyIqZqsOCoA" name="usersession" type="_y0x28OCNEe2YyIqZqsOCoA" association="_oxJ8QOCVEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1G7CQOCZEe2YyIqZqsOCoA" name="Inventory" visibility="package">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-S9UAuCZEe2YyIqZqsOCoA" name="itemlist" type="_24PO4OCZEe2YyIqZqsOCoA" association="_-S63wOCZEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-S-iIOCZEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-S-iIeCZEe2YyIqZqsOCoA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_GGPDEOCaEe2YyIqZqsOCoA" name="InventoryList[]" visibility="package" type="_IX9rkOCOEe2YyIqZqsOCoA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHCskOCgEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHsM0OCgEe2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_4uI8YOCgEe2YyIqZqsOCoA" name="getItemList"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_w8d4YOC3Ee2YyIqZqsOCoA" name="CheckInventoryStatus"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3BdgsOC3Ee2YyIqZqsOCoA" name="RemoveFromInventory"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ymoUIOC3Ee2YyIqZqsOCoA" name="CheckItem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5cDT0OC3Ee2YyIqZqsOCoA" name="addToInventory"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AbzsgOC-Ee2YyIqZqsOCoA" name="getTime"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_24PO4OCZEe2YyIqZqsOCoA" name="ItemList">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_A5obUuCaEe2YyIqZqsOCoA" name="item" type="_3DFM8OCZEe2YyIqZqsOCoA" association="_A5mmIOCaEe2YyIqZqsOCoA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A5ppcOCaEe2YyIqZqsOCoA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A5ppceCaEe2YyIqZqsOCoA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__uNF0OCgEe2YyIqZqsOCoA" name="Item[]" type="_JEhPkOCOEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yNssMOC2Ee2YyIqZqsOCoA" name="TotalQuantity"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_65sL8OC2Ee2YyIqZqsOCoA" name="Name"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7hImcOC2Ee2YyIqZqsOCoA" name="Price"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_74pwkOCgEe2YyIqZqsOCoA" name="getItem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_v-x9kOC2Ee2YyIqZqsOCoA" name="addItem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_wwyCQOC2Ee2YyIqZqsOCoA" name="getQuantity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_oDvkMOC3Ee2YyIqZqsOCoA" name="getName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qDAtQOC3Ee2YyIqZqsOCoA" name="setName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_t0-jAOC3Ee2YyIqZqsOCoA" name="getPrice"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3DFM8OCZEe2YyIqZqsOCoA" name="Item">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0oLKkOC2Ee2YyIqZqsOCoA" name="ID"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_46xBIOC2Ee2YyIqZqsOCoA" name="Name"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8KWikOC2Ee2YyIqZqsOCoA" name="Price"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_9B5OkOC2Ee2YyIqZqsOCoA" name="ExpDate"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_T5QA0OC3Ee2YyIqZqsOCoA" name="Quantity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gE8hoOC3Ee2YyIqZqsOCoA" name="getID"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gzK5kOC3Ee2YyIqZqsOCoA" name="setID"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_hkWe4OC3Ee2YyIqZqsOCoA" name="getExpDate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jBJ0EOC3Ee2YyIqZqsOCoA" name="setExpDate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_kHPSYOC3Ee2YyIqZqsOCoA" name="getName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lNnroOC3Ee2YyIqZqsOCoA" name="setName"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l-AmwOC3Ee2YyIqZqsOCoA" name="getQuantity"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_m2rUIOC3Ee2YyIqZqsOCoA" name="setQuantity"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-S63wOCZEe2YyIqZqsOCoA" memberEnd="_-S9UAuCZEe2YyIqZqsOCoA _-S-iIuCZEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-S9UAOCZEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-S9UAeCZEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-S-iIuCZEe2YyIqZqsOCoA" name="inventory" type="_1G7CQOCZEe2YyIqZqsOCoA" association="_-S63wOCZEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_A5mmIOCaEe2YyIqZqsOCoA" memberEnd="_A5obUuCaEe2YyIqZqsOCoA _A5ppcuCaEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A5obUOCaEe2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A5obUeCaEe2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_A5ppcuCaEe2YyIqZqsOCoA" name="itemlist" type="_24PO4OCZEe2YyIqZqsOCoA" association="_A5mmIOCaEe2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_m40zwOC4Ee2YyIqZqsOCoA" name="Cart">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_syU9wOC4Ee2YyIqZqsOCoA" name="ItemsInCart"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_wTdiMOC4Ee2YyIqZqsOCoA" name="Cost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KYvpAOC5Ee2YyIqZqsOCoA" name="ScanItem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LO2KkOC5Ee2YyIqZqsOCoA" name="getCost"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nGUdMOC4Ee2YyIqZqsOCoA" name="Invoice">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_0W9z4OC4Ee2YyIqZqsOCoA" name="Customer"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2HXagOC4Ee2YyIqZqsOCoA" name="Cart"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3SM18OC4Ee2YyIqZqsOCoA" name="FinalCost"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_PNoUUeC5Ee2YyIqZqsOCoA" name="cart" type="_m40zwOC4Ee2YyIqZqsOCoA" association="_PNhmoOC5Ee2YyIqZqsOCoA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GXxt8OC5Ee2YyIqZqsOCoA" name="PrintInvoice"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_HQ9YsOC5Ee2YyIqZqsOCoA" name="getCustomer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IFGLYOC5Ee2YyIqZqsOCoA" name="setCustomer"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_IycZkOC5Ee2YyIqZqsOCoA" name="Pay"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PNhmoOC5Ee2YyIqZqsOCoA" memberEnd="_PNoUUeC5Ee2YyIqZqsOCoA _PN3k4OC5Ee2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PNntQOC5Ee2YyIqZqsOCoA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PNoUUOC5Ee2YyIqZqsOCoA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_PN3k4OC5Ee2YyIqZqsOCoA" name="invoice" type="_nGUdMOC4Ee2YyIqZqsOCoA" association="_PNhmoOC5Ee2YyIqZqsOCoA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_klfpwOC5Ee2YyIqZqsOCoA" name="Transaction">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_oVqIsOC5Ee2YyIqZqsOCoA" name="TransactionLog">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_zrsM0OC5Ee2YyIqZqsOCoA" name="TransactionType" type="_44u5cOC5Ee2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3CfJgOC5Ee2YyIqZqsOCoA" name="Cost">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MjvEcOC6Ee2YyIqZqsOCoA" name="getTransactionLog"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_N3w4IOC6Ee2YyIqZqsOCoA" name="setTransactionLog"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OtaGsOC6Ee2YyIqZqsOCoA" name="addTransaction"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PpoeYOC6Ee2YyIqZqsOCoA" name="setCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Q6r2kOC6Ee2YyIqZqsOCoA" name="getCost"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_RfnvoOC6Ee2YyIqZqsOCoA" name="setTransactionType"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_SasQwOC6Ee2YyIqZqsOCoA" name="getTransactionType"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_44u5cOC5Ee2YyIqZqsOCoA" name="TransactionType">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6eJYEOC5Ee2YyIqZqsOCoA" name="Logins"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9GxAIOC5Ee2YyIqZqsOCoA" name="Logouts"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_9n1s4OC5Ee2YyIqZqsOCoA" name="CurrencyReceipts"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Bvqd4OC6Ee2YyIqZqsOCoA" name="PurchaseTransaction"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_DNGsQOC6Ee2YyIqZqsOCoA" name="InventoryTransaction"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Eir_IOC6Ee2YyIqZqsOCoA" name="Distribution"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_LUCXIOC6Ee2YyIqZqsOCoA" client="_klfpwOC5Ee2YyIqZqsOCoA" supplier="_44u5cOC5Ee2YyIqZqsOCoA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mdaYMOC6Ee2YyIqZqsOCoA" name="UserSession">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qAjSUOC7Ee2YyIqZqsOCoA" name="Inventory" type="_Hg9yIOCOEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_r98zIOC7Ee2YyIqZqsOCoA" name="User" type="_kpp1AOCNEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Dj3UgOC8Ee2YyIqZqsOCoA" name="Transaction" visibility="protected" type="_X5dOEOCPEe2YyIqZqsOCoA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMHSAOC8Ee2YyIqZqsOCoA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_19R_gOC6Ee2YyIqZqsOCoA" name="Login"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3GUrMOC6Ee2YyIqZqsOCoA" name="Logout"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MztIMOC8Ee2YyIqZqsOCoA" name="AddTransaction"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nw71kOC6Ee2YyIqZqsOCoA" name="PharmacistSession">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PcZowOC8Ee2YyIqZqsOCoA" general="_mdaYMOC6Ee2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2r7YwOC7Ee2YyIqZqsOCoA" name="Pharmacist" type="_noUlkOCNEe2YyIqZqsOCoA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__bN5kOC6Ee2YyIqZqsOCoA" name="CheckItem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AFgzwOC7Ee2YyIqZqsOCoA" name="CreateCustomerAccount"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VcL2YOC7Ee2YyIqZqsOCoA" name="PrintInvoice"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dedDsOC7Ee2YyIqZqsOCoA" name="ViewCustomerHistory"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pY-KYOC6Ee2YyIqZqsOCoA" name="CashierSession">
+    <generalization xmi:type="uml:Generalization" xmi:id="_QJ5A4OC8Ee2YyIqZqsOCoA" general="_mdaYMOC6Ee2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_2At4kOC7Ee2YyIqZqsOCoA" name="Cashier" type="_pGWCwOCNEe2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_4UJTwOC7Ee2YyIqZqsOCoA" name="Cart" type="_8yHp0OCNEe2YyIqZqsOCoA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_WQlu0OC7Ee2YyIqZqsOCoA" name="ScanItem"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qeYTQOC6Ee2YyIqZqsOCoA" name="ManagerSession">
+    <generalization xmi:type="uml:Generalization" xmi:id="_QrIFsOC8Ee2YyIqZqsOCoA" general="_mdaYMOC6Ee2YyIqZqsOCoA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1McjAOC7Ee2YyIqZqsOCoA" name="Manager" visibility="protected" type="_qtiqEOCNEe2YyIqZqsOCoA"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_34P3YOC6Ee2YyIqZqsOCoA" name="generateReport"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_449GcOC6Ee2YyIqZqsOCoA" name="CheckInventoryStatus"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_68g5oOC6Ee2YyIqZqsOCoA" name="CreateUserAccount"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_8QBv8OC6Ee2YyIqZqsOCoA" name="AddToInventory"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_9TyTAOC6Ee2YyIqZqsOCoA" name="RemoveFromInventory"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-yr58OC6Ee2YyIqZqsOCoA" name="CheckItem"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bOTmAOC7Ee2YyIqZqsOCoA" name="openNotifications"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EbdgUOC7Ee2YyIqZqsOCoA" name="GetTransactionHistory"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_piPP0OAlEe2YyIqZqsOCoA" name="ItenList">
+    <packagedElement xmi:type="uml:Component" xmi:id="_uHgKwOAlEe2YyIqZqsOCoA" name="Item"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_IFoH8OCaEe2YyIqZqsOCoA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IGC-sOCaEe2YyIqZqsOCoA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

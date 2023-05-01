@@ -1,0 +1,5 @@
+package CheckoutSystem;
+
+public class Invoice {
+
+}

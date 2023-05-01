@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+/**
+ * @author pymda
+ *
+ */
+module inventoryManagement {
+	exports inventoryManagement;
+	requires accountManagement;
+	uses accountManagement.User;
+	
+}

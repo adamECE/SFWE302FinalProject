@@ -1,0 +1,17 @@
+package CheckoutSystem;
+
+import java.util.ArrayList;
+
+public class Invoice {
+	ArrayList<String> items;
+	Float totalCost;
+	
+	Invoice(Cart cart) {
+		this.items = new ArrayList<String>();
+		for(int i = 0; i < cart.items.size(); i++) {
+			this.items.set(i, i + " " + cart.items.get(i).name + " " + cart.items.get(i).price);
+		}
+		this.totalCost = cart.currentPrice;
+	}
+	
+}

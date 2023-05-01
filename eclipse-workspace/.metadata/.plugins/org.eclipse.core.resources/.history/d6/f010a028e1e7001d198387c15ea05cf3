@@ -1,0 +1,45 @@
+package TerminalUI;
+
+import java.util.Scanner;
+
+import inventoryManagement.Item;
+import inventoryManagement.ItemList;
+
+public class ManagerSession extends UserSession {
+	UserSession US;
+	public static void managerActive(Scanner scan, ItemList Inventory) {
+		while(true) {
+			System.out.println();
+			System.out.println("Functions:\nAddItem\nCheckInventory\nExit");
+			String userInput = scan.nextLine();
+			if(userInput.startsWith("AddItem")) {
+				Item newItem = new Item();
+				System.out.println("Give Item ID");
+				newItem.ID = Integer.valueOf(scan.nextLine());
+				System.out.println("Give Item Name");
+				newItem.name = scan.nextLine();
+				System.out.println("Give Item Expiration Date");
+				newItem.expirationDate = Float.parseFloat(scan.nextLine());
+				System.out.println("Give Item Quantity");
+				newItem.quantity = Integer.valueOf(scan.nextLine());
+				System.out.println("Give Item Price");
+				newItem.price = Float.parseFloat(scan.nextLine());
+			}
+
+			else if (userInput.startsWith("CheckInventory")) {
+				System.out.println("Give Item Name");
+				String name = scan.nextLine();
+				Inventory.CheckInventory(name);
+			}
+			else if(userInput.startsWith("Exit")) {
+				break;
+			}
+			else {
+				System.out.println("Invalid Input");
+			}
+				
+			}
+		scan.close();
+		}
+	}
+	

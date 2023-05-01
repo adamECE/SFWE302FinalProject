@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;inventory.csv&apos; to &apos;inventoryManagement&apos;" description="Move &apos;inventory.csv&apos; to &apos;inventoryManagement&apos;" destination="/inventoryManagement" element1="/main.app/inventory.csv" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1680223931448" updateReferences="true"/>
+</session>

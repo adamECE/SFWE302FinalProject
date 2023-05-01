@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/PharmacySystem/PharmacySystem.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_qtiqEOCNEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_X5dOEOCPEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_pGWCwOCNEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_8yHp0OCNEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_noUlkOCNEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_JnNs8OCOEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_kpp1AOCNEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_Hg9yIOCOEe2YyIqZqsOCoA"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_44u5cOC5Ee2YyIqZqsOCoA"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_JEhPkOCOEe2YyIqZqsOCoA"/>
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_IX9rkOCOEe2YyIqZqsOCoA"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/PharmacySystem/PharmacySystem.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/PharmacySystem/PharmacySystem.uml#_JEhPkOCOEe2YyIqZqsOCoA"/>
+			</list>
+		</section>
+	</section>
+</section>

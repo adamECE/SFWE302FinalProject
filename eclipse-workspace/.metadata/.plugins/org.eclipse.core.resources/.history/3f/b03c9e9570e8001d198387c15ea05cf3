@@ -1,0 +1,8 @@
+package CheckoutSystem;
+
+import inventoryManagement.Item;
+
+public class Cart {
+	Item[] items;
+	Float currentPrice;
+}

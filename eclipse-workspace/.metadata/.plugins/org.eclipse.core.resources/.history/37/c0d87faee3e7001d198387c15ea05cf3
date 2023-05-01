@@ -1,0 +1,8 @@
+package UserManagement;
+
+public class User{
+	String password;
+	String userName;
+	String name;
+	
+}

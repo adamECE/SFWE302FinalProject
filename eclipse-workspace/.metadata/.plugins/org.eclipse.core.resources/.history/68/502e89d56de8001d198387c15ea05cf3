@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author pymda
+ *
+ */
+module CheckoutSystem {
+	exports CheckoutSystem;
+}

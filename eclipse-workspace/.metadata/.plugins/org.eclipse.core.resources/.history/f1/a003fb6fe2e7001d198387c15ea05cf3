@@ -1,0 +1,5 @@
+package accountManagement;
+
+public class Pharmacist extends User{
+
+}

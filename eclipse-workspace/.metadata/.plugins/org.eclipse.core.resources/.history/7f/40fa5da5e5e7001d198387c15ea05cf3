@@ -1,0 +1,18 @@
+package UserManagement;
+
+public class User{
+	String password;
+	String userName;
+	String name;
+	enum accountType{
+		Manager,
+		Cashier,
+		Pharmacist
+	}
+	public boolean login(){
+		return false;
+	}
+	public void logout() {
+		
+	}
+}

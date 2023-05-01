@@ -1,0 +1,6 @@
+package CustomerManagement;
+import java.util.ArrayList;
+public class Customer {
+	public String name;
+	public ArrayList<String> notifications = new ArrayList<String>();
+}

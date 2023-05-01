@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+/**
+ * @author pymda
+ *
+ */
+module main.app {
+	requires accountManagement;
+	requires CustomerManagement;
+	requires inventoryManagement;
+	uses inventoryManagement.Item;
+}

@@ -1,0 +1,6 @@
+package CheckoutSystem;
+
+public class Invoice {
+	Cart items;
+	Float totalCost;
+}

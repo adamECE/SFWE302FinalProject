@@ -1,0 +1,8 @@
+package accountManagement;
+
+public class Cashier extends User{
+	public Integer password;
+	public String userName;
+	public String name;
+	
+}

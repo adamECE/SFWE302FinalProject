@@ -1,0 +1,10 @@
+package CheckoutSystem;
+
+import java.util.ArrayList;
+
+import inventoryManagement.Item;
+
+public class Cart {
+	ArrayList<Item> items;
+	Float currentPrice;
+}

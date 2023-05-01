@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+/**
+ * @author pymda
+ *
+ */
+module accountManagement {
+	exports accountManagement;
+	
+}

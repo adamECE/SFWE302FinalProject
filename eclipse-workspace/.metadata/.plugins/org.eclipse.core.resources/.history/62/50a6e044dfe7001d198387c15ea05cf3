@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+/**
+ * @author pymda
+ *
+ */
+module accountManagement {
+	exports accountManagement;
+	provides accountManagement.ValidateService with accountManagement.User;
+	
+}

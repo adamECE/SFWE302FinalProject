@@ -1,0 +1,154 @@
+
+package TerminalUI;
+import java.util.Scanner;
+import inventoryManagement.Item;
+import inventoryManagement.ItemList;
+import accountManagement.Customer;
+import accountManagement.Manager;
+import accountManagement.Cashier;
+import notificationManagement.CustomerNotification;
+
+import java.io.IOException;
+import java.util.ArrayList;
+public class GUIClass {
+	public static void main(String[] args) throws IOException{
+		ItemList Inventory = new ItemList();
+		Customer customer = new Customer();
+		Manager manager = new Manager();
+		Cashier cashier = new Cashier();
+		int view;
+		Float currentPrice = (float) 0;
+		customer.name = "Daniel";
+		manager.name = "Mario";
+		cashier.name = "David";
+		String userInput;
+		CustomerNotification cn = new CustomerNotification();
+		cn.LoadNotifications(customer);
+		InitializeSystem(Inventory);
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Welcome to main menu!");
+		System.out.println("\nChoose Type: \nManager\nCashier\nCustomer");
+		
+		while(true) {
+			userInput = scan.nextLine();
+			if(userInput.startsWith("Manager")) {
+				view = 1;
+				break;
+			}
+			if(userInput.startsWith("Customer")) {
+				view = 3;
+				break;
+			}
+			if(userInput.startsWith("Cashier")) {
+				view = 2;
+				break;
+			}
+			else {
+				System.out.println("Invalid Input");
+				
+			}
+		}
+		if(view == 1) {
+			while(true) {
+				System.out.println();
+				System.out.println("Functions:\nAddItem\nScanItem\nCheckInventory\nExit");
+				userInput = scan.nextLine();
+				if(userInput.startsWith("AddItem")) {
+					Item newItem = new Item();
+					System.out.println("Give Item ID");
+					newItem.ID = Integer.valueOf(scan.nextLine());
+					System.out.println("Give Item Name");
+					newItem.name = scan.nextLine();
+					System.out.println("Give Item Expiration Date");
+					newItem.expirationDate = Float.parseFloat(scan.nextLine());
+					System.out.println("Give Item Quantity");
+					newItem.quantity = Integer.valueOf(scan.nextLine());
+					System.out.println("Give Item Price");
+					newItem.price = Float.parseFloat(scan.nextLine());
+					if(Inventory.AddItem(newItem, false)) {
+						cn.sendNotification(customer, newItem);
+					}
+				}
+				else if(userInput.startsWith("ScanItem")){
+					System.out.println("Give Item ID");
+					Integer ID = Integer.valueOf(scan.nextLine());
+					currentPrice = Inventory.ScanItem(ID, currentPrice);
+				}
+				else if (userInput.startsWith("CheckInventory")) {
+					System.out.println("Give Item Name");
+					String name = scan.nextLine();
+					Inventory.CheckInventory(name);
+				}
+				else if(userInput.startsWith("Exit")) {
+					break;
+				}
+				else {
+					System.out.println("Invalid Input");
+				}
+					
+				}
+			scan.close();
+			}
+		else if (view == 2) {
+			while(true) {
+				System.out.println();
+				System.out.println("Functions:\nScanItem\nExit");
+				userInput = scan.nextLine();
+				if(userInput.startsWith("ScanItem")){
+					System.out.println("Give Item ID");
+					Integer ID = Integer.valueOf(scan.nextLine());
+					currentPrice = Inventory.ScanItem(ID, currentPrice);
+				}
+				else if(userInput.startsWith("Exit")) {
+					break;
+				}
+				else {
+					System.out.println("Invalid Input");
+				}
+			}
+		}
+		else {
+			while(true) {
+				System.out.println();
+				System.out.println("Functions:\nScanItem\nNotifications\nExit");
+				userInput = scan.nextLine();
+				if(userInput.startsWith("ScanItem")){
+					System.out.println("Give Item ID");
+					Integer ID = Integer.valueOf(scan.nextLine());
+					currentPrice = Inventory.ScanItem(ID, currentPrice);
+				}
+				else if(userInput.startsWith("Notifications")) {
+					System.out.println("Notifications:\n");
+					for(int i = 0; i < customer.notifications.size(); i++) {
+						System.out.println(customer.notifications.get(i));
+					}
+					customer.notifications.clear();
+					cn.clearNotifications(customer);
+				}
+				else if(userInput.startsWith("Exit")) {
+					break;
+				}
+				else {
+					System.out.println("Invalid Input");
+				}
+			}
+		}
+		}
+	public static void InitializeSystem(ItemList Inventory) {
+		Inventory.Date = (float) 5.1;
+		Item first = new Item();
+		first.expirationDate = 0;
+		first.ID = 0;
+		first.name = "empty";
+		first.price = 0;
+		first.quantity = 0;
+		Inventory.itemList.put(0, first);
+		ArrayList<Item> list = new ArrayList<Item>();
+		list.add(first);
+		Inventory.quantityList.put(first.name, list);
+		Inventory.nameList = new ArrayList<String>();
+		Inventory.nameList.add(first.name);
+		Inventory.LoadInventory(Inventory);
+		
+	}
+}

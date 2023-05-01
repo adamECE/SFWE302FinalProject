@@ -1,0 +1,15 @@
+package CheckoutSystem;
+
+import java.util.ArrayList;
+
+import inventoryManagement.Item;
+import inventoryManagement.ItemList;
+
+public class Cart {
+	ArrayList<Item> items;
+	Float currentPrice;
+	
+	public void ScanItem(ItemList Inventory, Integer ID) {
+		currentPrice = Inventory.ScanItem(ID, currentPrice);
+	}
+}
